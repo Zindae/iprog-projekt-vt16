@@ -1,0 +1,36 @@
+<body>
+<div ng-controller="imageCtrl as vm" ng-cloak="" ng-app="myApp" layout="column" layout-fill>
+	<md-content id="content-scroller">
+    <div>
+        <div
+             class="cards-wrap"
+             angular-grid="vm.shots"
+             ag-grid-width="300"
+             ag-gutter-size="12"
+             ag-id="shots"
+             ag-infinite-scroll="vm.loadMoreShots()"
+             >
+          <div class="card" ng-repeat="shot in vm.shots track by $index">
+		  <!-- style="background-image: url({{::shot.images.normal}});" -->
+            <!-- <div class="img"></div> -->
+<!--             <div class="inside"> -->
+              <!-- <h3>{{::shot.title}}</h3> -->
+			  <img class="flickr-image" ng-src="https://farm{{shot.farm-id}}.staticflickr.com/{{shot.server-id}}/{{shot.id}}_{{shot.secret}}.jpg"/>
+              <!-- <div class="description" ng-bind-html="::shot.description | unsafe"></div> -->
+            <!-- </div> -->
+          </div>
+        </div>
+        <div class="loading-more-indicator" ng-show="vm.loadingMore">
+          <md-progress-circular md-mode="indeterminate" md-diameter="64" class="progress-swatch"></md-progress-circular>
+        </div>
+    </div>
+  </md-content>
+</div>
+</body>
+<!-- <script>
+(function() {var a = document.createElement("script");a.src = "https://rawgit.com/kentcdodds/ng-stats/master/dist/ng-stats.js";a.onload=function(){window.showAngularStats({position: 'topright'})};document.head.appendChild(a)})();
+</script> -->
+
+<!-- 	<li ng-repeat="x in images.photos.photo">
+		<img class="flickr-image" ng-src="https://farm{{x.farm-id}}.staticflickr.com/{{x.server-id}}/{{x.id}}_{{x.secret}}.jpg"/>
+	</li> -->

@@ -1,0 +1,27 @@
+<div class="nav-bar cf">
+  <div class="navigation container cf">
+	<ul>
+	  <li><a href="https://github.com/Zindae/iprog-projekt/tree/lab5">AlbumGram</a></li>
+	  <li>
+		<a href="#">Account<i class="fa fa-caret-down"></i></a>
+		<ul class="drop-down">
+			<li><a ng-hide="currentUser" ng-href="#/login">Login</a></li>
+			<li><a ng-hide="currentUser" ng-href="#/register">Register</a></li>
+			<li><a ng-hide="currentUser" ng-href="#/settings">Settings</a></li>
+			<li><a ng-show="currentUser" ng-href="#/login" ng-click="logout()">Logout</a></li>
+		</ul>
+	  </li>
+	</ul>
+  </div>
+</div>
+<!--   <div class="branding">
+  	<a href="https://github.com/Zindae/iprog-projekt/tree/lab5">AlbumGram</a>
+  </div>
+  <ul>
+    <li><a ng-hide="currentUser" ng-href="#/login">Login</a></li>
+    <li><a ng-hide="currentUser" ng-href="#/register">Register</a></li>
+    <li><a ng-show="currentUser" ng-href="#/login" ng-click="logout()">Logout</a></li>
+  </ul> -->
+
+
+

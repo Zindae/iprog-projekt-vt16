@@ -1,0 +1,53 @@
+<section class="card login">
+  
+  <form name="myform" 
+    ng-submit="login()"
+    novalidate>
+
+    <div class="textintro">
+      <h1>Hi there!</h1>
+      <p>Log-in to access the awesomeness!</p>
+      <p class="message"
+        ng-show="message"> {{ message }} </p>
+      <!-- the message depends on which controller is used  -->
+      <!-- <p>{{ user }}</p> since we add an attribute to the model, we can output it because of 2-way data bindign -->
+      <!-- <p>{{ myform }}</p> -->
+      <!-- output the whole form -->
+      <!-- <p>Is the email valid: {{myform.email.$valid}}</p> -->
+      <!-- <p>{{ myform.password }}</p> -->
+    </div> <!-- form heading -->
+
+    <fieldset>
+	
+      <input type="email" name="email" placeholder="Email" ng-model="user.email" ng-required="true">
+	  
+	  <!-- MD-INPUT, KRÄVER ngMaterial som strular med GRID -->
+	  
+<!-- 	<md-input-container>
+		<label for="Email">Email</label>
+		<input type="text" id="testInput"
+		   ng-model="user.email" ng-required="true" md-autofocus>
+	</md-input-container> -->
+	
+		<p class="error validationerror" 
+			ng-show="myform.email.$invalid && myform.email.$touched">
+			Must be a valid email</p>
+	  	  
+      <input type="password" name="password" placeholder="Password" ng-model="user.password" ng-required="true">
+	  
+<!-- 	<md-input-container>
+		<label for="Password">Password</label>
+		<input type="text" id="passwordInput"
+			ng-model="user.password" ng-required="true" md-autofocus>
+	</md-input-container> -->
+      
+		<p class="error validationerror" 
+			ng-show="myform.password.$invalid && myform.password.$touched">
+			Password is required</p>
+    </fieldset> <!-- form elements -->
+
+    <button type="submit" class="btn" ng-disabled="myform.$invalid">Login</button>
+    <p>or <a ng-href="#/home">continue without an account.</a></p> <!-- submit -->
+
+  </form> <!-- main form -->
+</section>
