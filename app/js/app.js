@@ -1,10 +1,10 @@
 var myApp = angular.module('myApp',
- ['ngRoute', 'firebase', 'ngResource', 'angularGrid'])
+ ['ngRoute', 'firebase',  'ngResource', 'angularGrid', 'ngMessages', 'ngSanitize', 'ngAnimate', 'ngAria', 'ngMaterial'])
  
  // 'ngMaterial' - förstör GRIDfältet, används av md-forms
 
   .constant('FIREBASE_URL', 'https://angreg1234.firebaseIO.com/'); // 2 constats that we use through out the app
-
+angular.module('tabsDemoDynamicHeight', ['ngMaterial']);
 
 myApp.run(['$rootScope', '$location',
   function($rootScope, $location) {

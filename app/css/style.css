@@ -1,5 +1,23 @@
 /* apply a natural box layout model to all elements, but allowing components to change */
 
+.tabsdemoDynamicHeight md-content {
+  background-color: transparent !important; }
+  .tabsdemoDynamicHeight md-content md-tabs {
+    background: #f6f6f6;
+    border: 1px solid #e1e1e1; }
+    .tabsdemoDynamicHeight md-content md-tabs md-tabs-wrapper {
+      background: white; }
+  .tabsdemoDynamicHeight md-content h1:first-child {
+    margin-top: 0; }
+
+.tab-container {
+	margin-top: 20px;
+}
+
+.md-dummy-wrapper {
+	/* display: none; */
+}
+
 .nav-bar {
 	background: #C8DEFF;
 	border-bottom: 3px solid #666;
@@ -165,7 +183,7 @@ html {
 }
 
 body {
-  background: #7B7B7B;
+  background: #FFFFFF;
 
 }
 
@@ -307,7 +325,7 @@ md-content {
 html, body {
   height: 100%;
   width: 100%;
-  background: #7B7B7B;
+  background: #FFFFFF;
 }
 
 a,
@@ -460,7 +478,7 @@ body  {
   color: #555459;
   line-height: 1.5rem;
   /* zoom: 1; */
-	background-color:#7B7B7B;
+	background-color:#FFFFFF;
 }
 
 .card {
