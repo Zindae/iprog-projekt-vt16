@@ -1,40 +1,72 @@
 <!DOCTYPE html>
-<html>
+
+<!-- ALBUMGRAM STARTSIDA -->
+
+<html lang="en">
 <head>
 <title>Albumgram</title>
-<style>
-#header {
-    background-color:black;
-    color:white;
-    text-align:center;
-    padding:5px;
-}
 
-#hej {
-    width:350px;
-    height:500px;
-    text-align: center;	 	 
-}
+<meta charset="utf-8"> 
+<meta name="viewport" content="width=device-width, initial-scale=1">
 
-</style>
+
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+
+<!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+
+<!-- Latest compiled JavaScript -->
+<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
 </head>
 
 <body>
 
-<div id="header">
-<h1>Albumgram</h1>
+<div class="container-fluid" style="background-image: url('http://www.designbolts.com/wp-content/uploads/2014/03/Purple-Blur-Background1.jpg');
+		height: 800px;">
+
+<!-- Header -->
+	<div class="header-row" style="text-align: center;
+									background-color: #F0F8FF;
+									padding: 10px 30px 10px 30px;
+									font-family: 'Playfair Display', Times,serif;
+									font-size: 25px;
+									opacity: 0.5;">Albumgram
+	</div>
+
+<!-- Startsidans body -->
+	<div class="row">
+		<div class="col-md-12" style="position: absolute; top: 20%;">	
+
+			<!-- Hello Kitty -->
+			<div class="row">
+			<img src='iproj-proj\Hello_Kitty_logo.svg' alt="Mountain View" style="width:220px;height:200px;display:block; margin-right:auto; margin-left:auto;padding-bottom: 30px;">
+			</div>
+
+
+			<!-- Search -->
+			<div class="row">
+				<div class="input-group" style="width: 250px; opacity: 0.5; margin: auto;border-right-style:none;">
+	      			<input type="text" class="form-control input-lg" id="searchword" placeholder="Search" style="font-family: 'Playfair Display', Times,serif;
+	      			font-size: 20px;">
+	      				<span class="input-group-addon">
+	        				<i class="glyphicon glyphicon-search"></i>
+	    				</span>
+	    		</div>
+	    	</div>
+
+			<!-- Login/Register-knapp -->
+			<div class="row">
+			  <button type="button" class="btn btn-default" style="font-family: 'Playfair Display', Times,serif; font-size: 16px; color: black; display:block; margin-right:auto; margin-left:auto; background-color: Transparent;border: none; padding-left: 150px; ">
+			  		<text style="opacity: 0.7;">Log In/Sign In</text>
+			  </button>
+			</div>
+
+		</div>
+
+	</div>
 </div>
-
-
-<div id="hej">
-<h2>London</h2>
-<p>London is the capital city of England. It is the most populous city in the United Kingdom,
-with a metropolitan area of over 13 million inhabitants.</p>
-<p>Standing on the River Thames, London has been a major settlement for two millennia,
-its history going back to its founding by the Romans, who named it Londinium.</p>
-</div>
-
-
+    <script src="https://code.jquery.com/jquery.js"></script>
 
 </body>
 </html>
