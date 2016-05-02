@@ -2,9 +2,11 @@
             <md-button class="tab-btn md-raised" ng-click="changeTab()">Change Tab</md-button>    
         </div> -->
 		
-        <div class="tab-container">
-            <md-tabs md-dynamic-height md-center-tabs="true">
+        <div class="tab-container" ng-cloak="">
+		<md-content>
+            <md-tabs md-disable-animation md-dynamic-height md-center-tabs="true" md-border-bottom>
                 <md-tab label="Recent Photos">
+				<md-content class="md-padding">
 				<!--// TAB 1 //-->
 				<div ng-controller="imageCtrl as vm" ng-cloak="" ng-app="myApp" layout="column" layout-fill>
 					<md-content id="content-scroller">
@@ -30,15 +32,17 @@
 					</div>
 					</md-content>
 				</div>
+				</md-content>
                 </md-tab>
                 <md-tab label="Search">
+				<md-content class="md-padding">
 				<!--// TAB 2 //-->
 					<div ng-controller="searchCtrl as vn" ng-cloak="" ng-app="myApp" layout="column" layout-fill>
 						<div class="searchbar">
 						 <md-input-container class="md-block">
 							<label>Search Pictures</label>
 							<input ng-model="text">
-							<a href="" class="btn btn-primary" style="float:left;" ng-click="search(text)">Search</a>
+							<md-button class="md-raised" style="float:left;" ng-click="search(text)">Search</md-button>
 						  </md-input-container>
 						 </div>
 						<md-content id="content-scroller">
@@ -64,9 +68,10 @@
 						</div>
 						</md-content>
 					</div>
-				
+				</md-content>
                 </md-tab>
                 <md-tab label="Favorites">
+				<md-content class="md-padding">
 				<!--// TAB 3 //-->
 
 <!-- 					<div
@@ -80,8 +85,11 @@
 								  <img class="flickr-image" ng-src="https://farm{{shot.farm-id}}.staticflickr.com/{{shot.server-id}}/{{shot.id}}_{{shot.secret}}.jpg"/>
 						</div>
 					<!-- </div> -->
+				</md-content>
                 </md-tab>
-            </md-tabs>      
+			
+            </md-tabs>  
+		</md-content>
         </div>
        
         
