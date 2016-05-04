@@ -1,5 +1,5 @@
 var myApp = angular.module('myApp',
- ['ngRoute', 'firebase',  'ngResource', 'angularGrid', 'ngMessages', 'ngSanitize', 'ngAnimate', 'ngAria', 'ngMaterial'])
+ ['ngRoute', 'firebase',  'ngResource', 'angularGrid', 'ngMessages', 'ngSanitize', 'ngAnimate', 'ngAria', 'ngMaterial', 'ngCookies'])
  
  // 'ngMaterial' - förstör GRIDfältet, används av md-forms
 

@@ -1,139 +1,117 @@
-<!--         <div class="tab-change-row">
-            <md-button class="tab-btn md-raised" ng-click="changeTab()">Change Tab</md-button>    
-        </div> -->
-		
-        <div class="tab-container" ng-cloak="">
-		<md-content>
-            <md-tabs md-disable-animation md-dynamic-height md-center-tabs="true" md-border-bottom>
-                <md-tab label="Recent Photos">
-				<md-content class="md-padding">
-				<!--// TAB 1 //-->
-				<div ng-controller="imageCtrl as vm" ng-cloak="" ng-app="myApp" layout="column" layout-fill>
+<div class="tab-container" ng-cloak="" ng-controller="imageCtrl as vm">
+	<md-content>
+		<md-tabs md-disable-animation md-dynamic-height md-center-tabs="true" md-no-select-click="true">
+
+			<!--// TAB 1 //-->		
+			<md-tab label="Recent Photos">
+			<md-content class="md-padding">
+			<div ng-controller="imageCtrl as vm" ng-cloak="" ng-app="myApp" layout="column" layout-fill>
+				<md-content id="content-scroller">
+				<div>
+					<div
+						 class="cards-wrap"
+						 angular-grid="vm.shots"
+						 ag-grid-width="300"
+						 ag-gutter-size="12"
+						 ag-id="shots"
+						 ag-infinite-scroll="false"
+						 >
+					  <div class="card" ng-repeat="shot in vm.shots track by $index">
+						  <img class="flickr-image" ng-src="https://farm{{shot.farm-id}}.staticflickr.com/{{shot.server-id}}/{{shot.id}}_{{shot.secret}}.jpg"/>
+							<md-button class="md-icon-button md-accent" aria-label="Favorite" ng-click="addToFavorite(shot)">
+								<md-icon md-svg-icon="img/icons/favorite.svg"></md-icon>
+							</md-button>
+					  </div>
+					</div>
+					<md-button ng-hide="vm.loadingMore" class="md-raised" style="margin-left:50%; margin-right: 50%;" ng-click="vm.loadingMore=true && vm.loadMoreShots()">	
+						Load more
+					</md-button>
+					<div class="loading-more-indicator" ng-show="vm.loadingMore">
+						<md-progress-circular md-mode="indeterminate" md-diameter="64" class="progress-swatch"></md-progress-circular>
+					</div>
+				</div>
+				</md-content>
+			</div>
+			</md-content>
+			</md-tab>
+			
+			
+			<!--// TAB 2 //-->
+			<md-tab label="Search">
+			<md-content class="md-padding">
+
+				<div ng-controller="searchCtrl as vn" ng-cloak="" ng-app="myApp" layout="column" layout-fill>
+					<div class="searchbar">
+					 <md-input-container class="md-block">
+						<label>Search Pictures</label>
+						<input ng-model="text">
+						<md-button class="md-raised" style="float:left;" ng-click="search(text)">Search</md-button>
+					  </md-input-container>
+					 </div>
 					<md-content id="content-scroller">
 					<div>
 						<div
 							 class="cards-wrap"
-							 angular-grid="vm.shots"
+							 angular-grid="vn.shots"
 							 ag-grid-width="300"
 							 ag-gutter-size="12"
 							 ag-id="shots"
-							 ag-infinite-scroll="vm.loadMoreShots()"
+							 ag-infinite-scroll="false"
 							 >
-						  <div class="card" ng-repeat="shot in vm.shots track by $index">
+						  <div class="card" ng-repeat="shot in vn.shots track by $index">
 							  <img class="flickr-image" ng-src="https://farm{{shot.farm-id}}.staticflickr.com/{{shot.server-id}}/{{shot.id}}_{{shot.secret}}.jpg"/>
 								<md-button class="md-icon-button md-accent" aria-label="Favorite" ng-click="addToFavorite(shot)">
 									<md-icon md-svg-icon="img/icons/favorite.svg"></md-icon>
 								</md-button>
 						  </div>
 						</div>
-						<div class="loading-more-indicator" ng-show="vm.loadingMore">
+						<md-button class="md-raised" style="margin-left:45%;" ng-click="vn.loadingMore=true && vn.loadMoreShots()">	
+							Load more
+						</md-button>
+						<div class="loading-more-indicator" ng-show="vn.loadingMore">
 						  <md-progress-circular md-mode="indeterminate" md-diameter="64" class="progress-swatch"></md-progress-circular>
 						</div>
 					</div>
 					</md-content>
 				</div>
-				</md-content>
-                </md-tab>
-                <md-tab label="Search">
-				<md-content class="md-padding">
-				<!--// TAB 2 //-->
-					<div ng-controller="searchCtrl as vn" ng-cloak="" ng-app="myApp" layout="column" layout-fill>
-						<div class="searchbar">
-						 <md-input-container class="md-block">
-							<label>Search Pictures</label>
-							<input ng-model="text">
-							<md-button class="md-raised" style="float:left;" ng-click="search(text)">Search</md-button>
-						  </md-input-container>
-						 </div>
-						<md-content id="content-scroller">
-						<div>
-							<div
-								 class="cards-wrap"
-								 angular-grid="vn.shots"
-								 ag-grid-width="300"
-								 ag-gutter-size="12"
-								 ag-id="shots"
-								 ag-infinite-scroll="vn.loadMoreShots()"
-								 >
-							  <div class="card" ng-repeat="shot in vn.shots track by $index">
-								  <img class="flickr-image" ng-src="https://farm{{shot.farm-id}}.staticflickr.com/{{shot.server-id}}/{{shot.id}}_{{shot.secret}}.jpg"/>
-									<md-button class="md-icon-button md-accent" aria-label="Favorite" ng-click="addToFavorite(shot)">
-										<md-icon md-svg-icon="img/icons/favorite.svg"></md-icon>
-									</md-button>
-							  </div>
-							</div>
-							<div class="loading-more-indicator" ng-show="vn.loadingMore">
-							  <md-progress-circular md-mode="indeterminate" md-diameter="64" class="progress-swatch"></md-progress-circular>
-							</div>
-						</div>
-						</md-content>
-					</div>
-				</md-content>
-                </md-tab>
-                <md-tab label="Favorites">
-				<md-content class="md-padding">
-				<!--// TAB 3 //-->
-
-<!-- 					<div
-						 class="cards-wrap"
-						 angular-grid="imageCtrl.favorites"
-						 ag-grid-width="300"
-						 ag-gutter-size="12"
-						 ag-id="favorites"
-							> -->
-						<div class="card" ng-repeat="shot in favorites track by $index">
-								  <img class="flickr-image" ng-src="https://farm{{shot.farm-id}}.staticflickr.com/{{shot.server-id}}/{{shot.id}}_{{shot.secret}}.jpg"/>
-						</div>
-					<!-- </div> -->
-				</md-content>
-                </md-tab>
+			</md-content>
+			</md-tab>
 			
-            </md-tabs>  
-		</md-content>
-        </div>
-       
-        
+			<!--// TAB 1 //-->
+			<md-tab label="Favorites">
+			<md-content class="md-padding">
+			<div ng-controller="imageCtrl as vm" ng-cloak="" ng-app="myApp" layout="column" layout-fill>
+				<md-content id="content-scroller">
+				<div>
+					<div
+						 class="cards-wrap"
+						 angular-grid="favorites"
+						 ag-grid-width="500"
+						 ag-gutter-size="8"
+						 ag-id="shot"
+						 ag-infinite-scroll="false"
+						 >
+					  <div class="card" ng-repeat="shot in favorites">
+						  <img class="flickr-image" ng-src="https://farm{{shot.farm-id}}.staticflickr.com/{{shot.server-id}}/{{shot.id}}_{{shot.secret}}.jpg"/>
+						  <br/>
+							<md-button style="margin-top:5px;" class="md-icon-button md-raised md-accent" ng-click="removeFavorite(shot)">		
+								X
+							</md-button>
+<!-- 							<div ng-controller="dialogCtrl" class="md-padding" id="popupContainer" ng-cloak>
+								<div class="dialog-demo-content" layout="row" ayout="row" layout-wrap layout-margin layout-align="center">
+									<md-button class="md-primary md-raised" ng-click="showAdvanced($event)">
+										Info
+									</md-button>
+								</div>
+							</div> -->
+						</div>
+					</div>
+				</div>
 
-<!--  <div>
-  <md-content>
-    <md-tabs md-dynamic-height md-border-bottom>
-      <md-tab label="Recent Photos">
-        <md-content class="md-padding">
-          <h1 class="md-display-2">Tab One</h1>
-		  <md-tab-body>
-			<p>lol</p>
-			<button ng-click="hej()">123</button>
-			</md-tab-body>
-		  </md-content>
-      </md-tab>
-      <md-tab label="Search" md-on-select="hej()">
-        <md-content class="md-padding">
-		<md-tab-body>
-          <h1 class="md-display-2">Tab Two</h1>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla venenatis ante augue. Phasellus volutpat neque ac dui mattis vulputate. Etiam consequat aliquam cursus. In sodales pretium ultrices. Maecenas lectus est, sollicitudin consectetur felis nec, feugiat ultricies mi. Aliquam erat volutpat. Nam placerat, tortor in ultrices porttitor, orci enim rutrum enim, vel tempor sapien arcu a tellus. Vivamus convallis sodales ante varius gravida. Curabitur a purus vel augue ultrices ultricies id a nisl. Nullam malesuada consequat diam, a facilisis tortor volutpat et. Sed urna dolor, aliquet vitae posuere vulputate, euismod ac lorem. Sed felis risus, pulvinar at interdum quis, vehicula sed odio. Phasellus in enim venenatis, iaculis tortor eu, bibendum ante. Donec ac tellus dictum neque volutpat blandit. Praesent efficitur faucibus risus, ac auctor purus porttitor vitae. Phasellus ornare dui nec orci posuere, nec luctus mauris semper.</p>
-          <p>Morbi viverra, ante vel aliquet tincidunt, leo dolor pharetra quam, at semper massa orci nec magna. Donec posuere nec sapien sed laoreet. Etiam cursus nunc in condimentum facilisis. Etiam in tempor tortor. Vivamus faucibus egestas enim, at convallis diam pulvinar vel. Cras ac orci eget nisi maximus cursus. Nunc urna libero, viverra sit amet nisl at, hendrerit tempor turpis. Maecenas facilisis convallis mi vel tempor. Nullam vitae nunc leo. Cras sed nisl consectetur, rhoncus sapien sit amet, tempus sapien.</p>
-          <p>Integer turpis erat, porttitor vitae mi faucibus, laoreet interdum tellus. Curabitur posuere molestie dictum. Morbi eget congue risus, quis rhoncus quam. Suspendisse vitae hendrerit erat, at posuere mi. Cras eu fermentum nunc. Sed id ante eu orci commodo volutpat non ac est. Praesent ligula diam, congue eu enim scelerisque, finibus commodo lectus.</p>
-        </md-tab-body>
-		</md-content>
-      </md-tab>
-      <md-tab label="Your Favorites" md-on-select="hej()">
-        <md-content class="md-padding">
-		<md-tab-body>
-          <h1 class="md-display-2">Tab Three</h1>
-          <p>Integer turpis erat, porttitor vitae mi faucibus, laoreet interdum tellus. Curabitur posuere molestie dictum. Morbi eget congue risus, quis rhoncus quam. Suspendisse vitae hendrerit erat, at posuere mi. Cras eu fermentum nunc. Sed id ante eu orci commodo volutpat non ac est. Praesent ligula diam, congue eu enim scelerisque, finibus commodo lectus.</p>
-        </md-tab-body>
-		</md-content>
-      </md-tab>
-    </md-tabs>
-  </md-content>
-</div> -->
-
-
-				
-<!-- <script>
-(function() {var a = document.createElement("script");a.src = "https://rawgit.com/kentcdodds/ng-stats/master/dist/ng-stats.js";a.onload=function(){window.showAngularStats({position: 'topright'})};document.head.appendChild(a)})();
-</script> -->
-
-<!-- 	<li ng-repeat="x in images.photos.photo">
-		<img class="flickr-image" ng-src="https://farm{{x.farm-id}}.staticflickr.com/{{x.server-id}}/{{x.id}}_{{x.secret}}.jpg"/>
-	</li> -->
+				</md-content>
+			</div>
+			</md-content>
+			</md-tab>
+		</md-tabs>  
+	</md-content>	
+</div>

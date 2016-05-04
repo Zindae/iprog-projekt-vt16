@@ -1,4 +1,4 @@
-myApp.controller('imageCtrl', function($scope, $http, $q, albumGramService) {
+myApp.controller('imageCtrl', function($scope, $http, $q, $cookies, albumGramService) {
 	
 	var vm = this;
 	$scope.card = {};
@@ -6,6 +6,7 @@ myApp.controller('imageCtrl', function($scope, $http, $q, albumGramService) {
 	vm.page = 0;
 	vm.shots = [];
 	vm.loadingMore = false;
+	console.log(vm.loadingMore);
 	vm.loadMoreShots = function() {
 		if(vm.loadingMore) return;
 		vm.page++;
@@ -27,18 +28,26 @@ myApp.controller('imageCtrl', function($scope, $http, $q, albumGramService) {
 	};
 
 	vm.loadMoreShots();
-
+	
+	if ($cookies.getObject('favoriteList') === undefined) {
+		albumGramService.favoriteList =	{}
+	} 
+	else {
+		albumGramService.favoriteList = albumGramService.cookieGet();
+		};
+		
+	$scope.favorites = albumGramService.favoriteList;
+	
 	$scope.addToFavorite = function (id) {
-		console.log(id);
-		albumGramService.addFavorites(id);
+		albumGramService.favoriteList[id.id] = {farm:id.farm, id: id.id, secret: id.secret, server: id.server};
+		albumGramService.cookiePut();
 	}
 	
-	$scope.favorites = albumGramService.getFavorites();
-	
-	// $scope.pop = function(x) {
-		// console.log('Klickat på bild!', x);
-		// // ::shot.images.normal, finns en "hd" version, popup med bilden & knappar
-	// };
+	$scope.removeFavorite = function (id) {
+		delete albumGramService.favoriteList[id.id];
+		albumGramService.cookiePut();
+	}
+
 
 });
 myApp.filter('unsafe', function($sce) { return $sce.trustAsHtml; });
