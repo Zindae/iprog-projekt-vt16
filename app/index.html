@@ -48,6 +48,7 @@
   <script src="js/controllers/success.js"></script>
   <script src="js/controllers/imageCtrl.js"></script>
   <script src="js/controllers/settingsCtrl.js"></script>
+  <script src="js/controllers/test-persistence-ctrl.js"></script>
   <!-- <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script> -->
   
 </head>
@@ -73,6 +74,37 @@
       <main class="cf" ng-view>
         <!-- views go here -->
       </main>
+
+
+
+
+
+
+      <div class="comments-area" ng-controller="persistenceCtrl">
+        <div class="input">
+          <ul>
+            <li >If i am logged in my name will appear here: {{ ud() }}</li>
+          </ul>
+
+          <!-- <input name="input-comment" type="text" class="form-control" placeholder="enter comment" ng-model="enteredComment">
+          <a href="" class="btn btn-primary" ng-click="search(query)" style="float:left;">Search</a> -->
+          <form novalidate>
+            Header: <input type="text" ng-model="test.header" /><br />
+            Comment: <input type="text" ng-model="test.comment" /><br />
+            <input type="submit" ng-click="addCommentToUser(test)"/>
+          </form>
+        </div>
+
+        <div class="output">
+          <button class="btn" ng-click="logRoot()">logRoot</button>
+        </div>
+    </div>
+
+
+
+
+
+
   </div>
 </body>
 </html>
