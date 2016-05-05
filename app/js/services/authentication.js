@@ -2,34 +2,36 @@ myApp.factory('Authentication', ['$rootScope', '$firebaseAuth', '$firebaseObject
   function($rootScope, $firebaseAuth, $firebaseObject,
     $location, FIREBASE_URL) {
 
-    $rootScope.currentUser = undefined;
+    // $rootScope.currentUser = undefined;
     var RSCU = $rootScope.currentUser;
-    
+
     var ref = new Firebase(FIREBASE_URL);
     var auth = $firebaseAuth(ref);
-
+	// console.log(ref);
     auth.$onAuth(function(authUser) {
       if (authUser) {
         var userRef = new Firebase(FIREBASE_URL + 'users/' + authUser.uid ); // reference to user
         var userObj = $firebaseObject(userRef); // create obj based on reference 
+		console.log($rootScope.currentUser);
+		console.log(authUser);
         // userObj.$loaded().then(function() {
         //   // console.log('asdfasdf: ',userObj.$value); // "bar"
         //   console.log('inside: ',$rootScope.currentUser.$value);
         // });
         $rootScope.currentUser = userObj; // connect reference to 'current user'
         RSCU = userObj;
+		// console.log(RSCU);
 
         /* my testing access to the $value attribute of currentUser */
-        $rootScope.currentUser.$value = { 'a': 1, 'b': 2, 'c': 3 }; 
-        $rootScope.currentUser.$save();
-        console.log($rootScope.currentUser.$value);
+		// console.log($rootScope.currentUser.$value);
+        // console.log($rootScope.currentUser);
         // console.log($rootScope.currentUser.$value['a']);
         // userObj.$loaded().then(function() {
         //   // console.log('asdfasdf: ',userObj.$value); // "bar"
         //   console.log('inside: ', $rootScope.currentUser.$value);
         // });
        
-        console.log($rootScope.currentUser.$value.a);
+        // console.log('CURRENT USER', $rootScope.currentUser.$value);
         // console.log('rootScope.$value inside service: ',$rootScope.currentUser.$value)
         // console.log('rootScope.$value[\'a\'] inside service: ',$rootScope.currentUser.$value['a']);
 
@@ -38,9 +40,24 @@ myApp.factory('Authentication', ['$rootScope', '$firebaseAuth', '$firebaseObject
       } else  {
         $rootScope.currentUser = ''; // connect reference to 
       }
+
+	
     });
-
-
+	
+	
+	this.getCurr = function() {
+		$rootScope.currentUser.$value = { 'a': 1, 'b': 2, 'c': 3 }; 
+		return $rootScope.currentUser.$value;
+	};
+	
+	this.updateCurr = function(test) {
+		$rootScope.currentUser.$value[test.header] = test.comment;
+		console.log($rootScope.currentUser.$value);
+		$rootScope.currentUser.$save();
+		console.log($rootScope.currentUser.$save());
+		return $rootScope.currentUser.$value;
+	}
+	
      // created when Authentication is called in the Controllers
       this.login = function(user) {
         auth.$authWithPassword({
@@ -85,10 +102,12 @@ myApp.factory('Authentication', ['$rootScope', '$firebaseAuth', '$firebaseObject
     
     this.getUserData = function () {
       if ($rootScope.currentUser!==undefined && $rootScope.currentUser!=='') {
+		    
+
         // return 'yupp';
 
         // setTimeout(function() {
-        //   console.log($rootScope.currentUser.$value);
+          // console.log($rootScope.currentUser.$value);
         // }, 3000);
 
         // console.log($rootScope.currentUser.$value);
