@@ -1,0 +1,1103 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"fun",
+				"function〔keyword〕"
+			],
+			[
+				"re",
+				"render"
+			],
+			[
+				"h",
+				"html"
+			],
+			[
+				"conte",
+				"contentType〔argument〕"
+			],
+			[
+				"te",
+				"text"
+			],
+			[
+				"if",
+				"ife	if … else"
+			],
+			[
+				"co",
+				"cookies"
+			],
+			[
+				"dish",
+				"dishList"
+			],
+			[
+				"parse",
+				"parseInt〔function〕"
+			],
+			[
+				"men",
+				"menuIDs"
+			],
+			[
+				"get",
+				"getMenuIDs"
+			],
+			[
+				"me",
+				"menuDishIDs"
+			],
+			[
+				"this",
+				"thisFactory〔variable〕"
+			],
+			[
+				"m",
+				"myArray"
+			],
+			[
+				"set",
+				"setDishList"
+			],
+			[
+				"nu",
+				"numberOfGuest"
+			],
+			[
+				"menuI",
+				"menuIdList"
+			],
+			[
+				"menu",
+				"menuIdList"
+			],
+			[
+				"Dish",
+				"DishList"
+			],
+			[
+				"numb",
+				"numberOfGuests"
+			],
+			[
+				"ingre",
+				"ingredientlist"
+			],
+			[
+				"marker",
+				"marker2"
+			],
+			[
+				"tex",
+				"text-align"
+			],
+			[
+				"position",
+				"position: 〔property〕"
+			],
+			[
+				"left",
+				"left: 〔property〕"
+			],
+			[
+				"di",
+				"display: 〔property〕"
+			],
+			[
+				"flo",
+				"float: 〔property〕"
+			],
+			[
+				"he",
+				"height: 〔property〕"
+			],
+			[
+				"pad",
+				"padding"
+			],
+			[
+				"log",
+				"login"
+			],
+			[
+				"mya",
+				"myAuthObject"
+			],
+			[
+				"ro",
+				"rootScope"
+			],
+			[
+				"firebase",
+				"firebaseObject"
+			],
+			[
+				"auth",
+				"authUser"
+			],
+			[
+				"reg",
+				"regUser"
+			],
+			[
+				"fireb",
+				"FIREBASE_URL"
+			],
+			[
+				"f",
+				"firebaseAuth"
+			],
+			[
+				"padd",
+				"padding-top"
+			],
+			[
+				"marg",
+				"margin-top"
+			],
+			[
+				"pos",
+				"position"
+			],
+			[
+				"preg",
+				"preg_match"
+			],
+			[
+				"vale",
+				"value2"
+			],
+			[
+				"value",
+				"value1"
+			],
+			[
+				"ex",
+				"exit"
+			],
+			[
+				"html",
+				"htmlspecialchars"
+			],
+			[
+				"a",
+				"applet	Tag"
+			],
+			[
+				"pass",
+				"password"
+			],
+			[
+				"use",
+				"username"
+			],
+			[
+				"print",
+				"print_r"
+			],
+			[
+				"pr",
+				"print"
+			],
+			[
+				"red",
+				"redirect_to"
+			],
+			[
+				"n",
+				"new_location"
+			],
+			[
+				"hea",
+				"headers_list"
+			],
+			[
+				"inc",
+				"included_header"
+			],
+			[
+				"url",
+				"urlencode"
+			],
+			[
+				"un",
+				"undefined"
+			],
+			[
+				"tim",
+				"timeStampB"
+			],
+			[
+				"time",
+				"timeStampB"
+			],
+			[
+				"ch",
+				"checkers"
+			],
+			[
+				"ON",
+				"onkeydownFromUser"
+			],
+			[
+				"s",
+				"start"
+			],
+			[
+				"che",
+				"checkers"
+			],
+			[
+				"cha",
+				"changeTone"
+			],
+			[
+				"c",
+				"c2"
+			],
+			[
+				"con",
+				"console"
+			],
+			[
+				"mu",
+				"muteUnmute"
+			],
+			[
+				"CH",
+				"ChangeAndWrite"
+			],
+			[
+				"Ne",
+				"nextNoteIndex"
+			],
+			[
+				"pro",
+				"prototype"
+			],
+			[
+				"sta",
+				"startCounter"
+			],
+			[
+				"num",
+				"numberOfVoices"
+			],
+			[
+				"change",
+				"changePitchToNext"
+			],
+			[
+				"se",
+				"setNextNoteIndex"
+			],
+			[
+				"chan",
+				"changeFreq"
+			],
+			[
+				"cu",
+				"currentIndex"
+			],
+			[
+				"activ",
+				"activeVoices"
+			],
+			[
+				"nex",
+				"nextNoteIndex"
+			],
+			[
+				"cur",
+				"currentNoteIndex"
+			],
+			[
+				"freq",
+				"frequency"
+			],
+			[
+				"CU",
+				"currentNoteIndex"
+			],
+			[
+				"o",
+				"oscillator"
+			],
+			[
+				"acti",
+				"activeVoices"
+			],
+			[
+				"act",
+				"activeVoices"
+			],
+			[
+				"curr",
+				"currentKeycode"
+			],
+			[
+				"current",
+				"currentNoteIndex"
+			],
+			[
+				"mute",
+				"muteButton"
+			],
+			[
+				"sess",
+				"sessionAverage"
+			],
+			[
+				"av",
+				"averageBMP"
+			],
+			[
+				"tot",
+				"totAverBPM"
+			],
+			[
+				"to",
+				"totAverBPM"
+			],
+			[
+				"on",
+				"oneDish"
+			],
+			[
+				"up",
+				"updateDisplay"
+			],
+			[
+				"all",
+				"allRecipes"
+			],
+			[
+				"Prep",
+				"PrepView"
+			],
+			[
+				"getd",
+				"getDish"
+			],
+			[
+				"in",
+				"ingredients"
+			],
+			[
+				"Tet",
+				"TestModel"
+			],
+			[
+				"al",
+				"allDishes"
+			],
+			[
+				"de",
+				"dessert"
+			],
+			[
+				"pu",
+				"publisher"
+			],
+			[
+				"cre",
+				"create-dinner"
+			],
+			[
+				"sear",
+				"searchField"
+			],
+			[
+				"l",
+				"log"
+			],
+			[
+				"out",
+				"outputDish"
+			],
+			[
+				"ou",
+				"outputDish"
+			],
+			[
+				"ma",
+				"main1view1dishes"
+			],
+			[
+				"main1",
+				"main1view1"
+			],
+			[
+				"le",
+				"len"
+			],
+			[
+				"mar",
+				"margin-bottom"
+			],
+			[
+				"margin",
+				"margin-top"
+			],
+			[
+				"main",
+				"main1view1"
+			],
+			[
+				"back",
+				"background-color"
+			],
+			[
+				"padding",
+				"padding-bottom"
+			],
+			[
+				"bac",
+				"background-color"
+			],
+			[
+				"text",
+				"text-align"
+			],
+			[
+				"BE",
+				"BestBPM"
+			],
+			[
+				"ab",
+				"ABPM"
+			],
+			[
+				"A",
+				"ABPM"
+			],
+			[
+				"hi",
+				"HighestReachedBPM"
+			],
+			[
+				"ave",
+				"averageInBPM"
+			],
+			[
+				"ts",
+				"tsB"
+			],
+			[
+				"timeStam",
+				"timeStampB"
+			],
+			[
+				"mut",
+				"muteId"
+			],
+			[
+				"mys",
+				"mysql_close"
+			],
+			[
+				"my",
+				"mypassword"
+			],
+			[
+				"date_de",
+				"date_default_timezone_set"
+			],
+			[
+				"i",
+				"items"
+			],
+			[
+				"for",
+				"for	for (…) {…}"
+			]
+		]
+	},
+	"buffers":
+	[
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+		[
+			[
+				[
+					"Packages/Python/Python.sublime-build",
+					""
+				],
+				[
+					"Packages/Python/Python.sublime-build",
+					"Syntax Check"
+				]
+			],
+			[
+				"Packages/Python/Python.sublime-build",
+				"Syntax Check"
+			]
+		]
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 347.0,
+		"last_filter": "read",
+		"selected_items":
+		[
+			[
+				"read",
+				"ReadmePlease"
+			],
+			[
+				"install ",
+				"Package Control: Install Package"
+			],
+			[
+				"insta",
+				"Package Control: Install Package"
+			],
+			[
+				"install",
+				"Package Control: Install Package"
+			],
+			[
+				"ins",
+				"Package Control: Install Package"
+			],
+			[
+				"Snippet: FUN",
+				"Snippet: Function"
+			],
+			[
+				"Snippet: fun",
+				"Snippet: Function"
+			],
+			[
+				"Snippet: fo",
+				"Snippet: for (…) {…}"
+			],
+			[
+				"Snippet: o",
+				"Snippet: Object Value JS"
+			],
+			[
+				"Snippet: ",
+				"Snippet: Object Value JS"
+			],
+			[
+				"snip",
+				"Snippet: Object Method"
+			],
+			[
+				"emmet",
+				"Emmet: Toggle Comment"
+			],
+			[
+				"rea",
+				"ReadmePlease"
+			],
+			[
+				"hyper",
+				"Hyperlink Helper: Wrap Word / Selection as Link"
+			],
+			[
+				"instal",
+				"Package Control: Install Package"
+			],
+			[
+				"line",
+				"Line Ending: Unix"
+			],
+			[
+				"book",
+				"Bookmarks: Toggle"
+			],
+			[
+				"HTML",
+				"HTML: Wrap Selection With Tag"
+			]
+		],
+		"width": 558.0
+	},
+	"console":
+	{
+		"height": 366.0,
+		"history":
+		[
+			"import urllib2,os,hashlib; h = '2915d1851351e5ee549c20394736b442' + '8bc59f460fa1548d1514676163dafc88'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); os.makedirs( ipp ) if not os.path.exists(ipp) else None; urllib2.install_opener( urllib2.build_opener( urllib2.ProxyHandler()) ); by = urllib2.urlopen( 'http://packagecontrol.io/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); open( os.path.join( ipp, pf), 'wb' ).write(by) if dh == h else None; print('Error validating download (got %s instead of %s), please try manual install' % (dh, h) if dh != h else 'Please restart Sublime Text to finish installation')"
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+		"/Users/hjalmarjakobsson/Sites/iprog-projekt-vt16"
+	],
+	"file_history":
+	[
+		"/Users/hjalmarjakobsson/Sites/EthanRBrown-web-development-with-node-and-express/ch12/meadowlark.js",
+		"/Users/hjalmarjakobsson/Sites/EthanRBrown-web-development-with-node-and-express/ch12/credentials.js",
+		"/Users/hjalmarjakobsson/Sites/EthanRBrown-web-development-with-node-and-express/ch10/views/adventure.handlebars",
+		"/Users/hjalmarjakobsson/Sites/EthanRBrown-web-development-with-node-and-express/ch12/views/layouts/main.handlebars",
+		"/Users/hjalmarjakobsson/Sites/EthanRBrown-web-development-with-node-and-express/ch11/lib/email.js",
+		"/Users/hjalmarjakobsson/Sites/EthanRBrown-web-development-with-node-and-express/ch12/views/cart-checkout.handlebars",
+		"/Users/hjalmarjakobsson/Sites/EthanRBrown-web-development-with-node-and-express/ch12/views/email/cart-thank-you.handlebars",
+		"/Users/hjalmarjakobsson/Sites/EthanRBrown-web-development-with-node-and-express/ch10/meadowlark.js",
+		"/Users/hjalmarjakobsson/Sites/EthanRBrown-web-development-with-node-and-express/ch10/views/nursery-rhyme.handlebars",
+		"/Users/hjalmarjakobsson/Sites/EthanRBrown-web-development-with-node-and-express/ch10/views/cart.handlebars",
+		"/Users/hjalmarjakobsson/Sites/EthanRBrown-web-development-with-node-and-express/ch09/meadowlark.js",
+		"/Users/hjalmarjakobsson/Sites/EthanRBrown-web-development-with-node-and-express/ch08-jquery-file-upload/public/css/main.css",
+		"/Users/hjalmarjakobsson/Sites/EthanRBrown-web-development-with-node-and-express/ch08/views/contest/vacation-photo.handlebars",
+		"/Users/hjalmarjakobsson/Sites/EthanRBrown-web-development-with-node-and-express/ch08/views/newsletter.handlebars",
+		"/Users/hjalmarjakobsson/Sites/EthanRBrown-web-development-with-node-and-express/ch07/views/layouts/main.handlebars",
+		"/Users/hjalmarjakobsson/Sites/EthanRBrown-web-development-with-node-and-express/ch08/meadowlark.js",
+		"/Users/hjalmarjakobsson/Sites/EthanRBrown-web-development-with-node-and-express/ch07/meadowlark.js",
+		"/Users/hjalmarjakobsson/Sites/EthanRBrown-web-development-with-node-and-express/ch07/views/nursery-rhyme.handlebars",
+		"/Users/hjalmarjakobsson/Sites/EthanRBrown-web-development-with-node-and-express/ch06/views/layouts/main.handlebars",
+		"/Users/hjalmarjakobsson/Sites/EthanRBrown-web-development-with-node-and-express/ch05/views/layouts/main.handlebars",
+		"/Users/hjalmarjakobsson/Sites/EthanRBrown-web-development-with-node-and-express/ch07/views/partials/weather.handlebars",
+		"/Users/hjalmarjakobsson/Downloads/angular-js-star-rating-directive/js/index.js",
+		"/Users/hjalmarjakobsson/Downloads/angular-js-star-rating-directive/js/factory.js",
+		"/Users/hjalmarjakobsson/Downloads/angular-js-star-rating-directive/license.txt",
+		"/Users/hjalmarjakobsson/Sites/Node and Express/meadowlark/site/public/qa/tests-global.js",
+		"/Users/hjalmarjakobsson/Sites/Node and Express/meadowlark/site/public/qa/tests-about.js",
+		"/Users/hjalmarjakobsson/Sites/Node and Express/2 meadowlark/site/views/about.handlebars",
+		"/Users/hjalmarjakobsson/Sites/Node and Express/meadowlark/site/package.json",
+		"/Users/hjalmarjakobsson/Sites/Node and Express/meadowlark/site/.gitignore",
+		"/Users/hjalmarjakobsson/Sites/Node and Express/meadowlark/site/lib/fortune.js",
+		"/Users/hjalmarjakobsson/Sites/Node and Express/2 meadowlark/site/meadowlark.js",
+		"/Users/hjalmarjakobsson/Library/Application Support/Sublime Text 3/Packages/Handlebars/README.md",
+		"/Users/hjalmarjakobsson/Sites/Node and Express/2 meadowlark/site/views/layouts/404.handlebars",
+		"/Users/hjalmarjakobsson/Sites/Node and Express/2 meadowlark/site/views/layouts/500.handlebars",
+		"/Users/hjalmarjakobsson/Sites/Node and Express/2 meadowlark/site/views/layouts/home.handlebars",
+		"/Users/hjalmarjakobsson/Sites/Node and Express/2 meadowlark/site/views/layouts/about.handlebars",
+		"/Users/hjalmarjakobsson/Sites/Node and Express/2 meadowlark/site/package.json",
+		"/Users/hjalmarjakobsson/Sites/Node and Express/2 meadowlark/site/node_modules/README.md",
+		"/Users/hjalmarjakobsson/Sites/Node and Express/2 meadowlark/site/.gitignore",
+		"/Users/hjalmarjakobsson/Sites/Node and Express/1 hello world/public/about.html",
+		"/Users/hjalmarjakobsson/Sites/Node and Express/1 hello world/public/home.html",
+		"/Users/hjalmarjakobsson/Sites/Node and Express/1 hello world/hello-world.js",
+		"/Users/hjalmarjakobsson/Sites/Node and Express/1 hello world/public/404.html",
+		"/Users/hjalmarjakobsson/Sites/Node and Express/hello world/hello-world-2.js",
+		"/Users/hjalmarjakobsson/Sites/Node and Express/hello world/hello-world.js",
+		"/Users/hjalmarjakobsson/Sites/ng2048-master/package.json",
+		"/Users/hjalmarjakobsson/Sites/dinnerplanner-html/app/js/dishCtrl.js",
+		"/Users/hjalmarjakobsson/Sites/dinnerplanner-html/app/js/test-nav-ctrl.js",
+		"/Users/hjalmarjakobsson/.npm/expand-range/1.8.1/package/package.json",
+		"/Users/hjalmarjakobsson/Sites/dinnerplanner-html/app/js/dinnerCtrl.js",
+		"/Users/hjalmarjakobsson/Sites/dinnerplanner-html/app/js/dinnerService.js",
+		"/Users/hjalmarjakobsson/Sites/dinnerplanner-html/app/partials/overview.html",
+		"/Users/hjalmarjakobsson/Sites/dinnerplanner-html/app/partials/preparation.html",
+		"/Users/hjalmarjakobsson/Sites/dinnerplanner-html/app/partials/nav.html",
+		"/Users/hjalmarjakobsson/Sites/dinnerplanner-html/app/js/app.js",
+		"/Users/hjalmarjakobsson/Sites/dinnerplanner-html/app/partials/dish.html",
+		"/Users/hjalmarjakobsson/Sites/dinnerplanner-html/from_lab_3_prep_view.js",
+		"/Users/hjalmarjakobsson/Sites/dinnerplanner-html/preparationView_from_lab_3.js",
+		"/Users/hjalmarjakobsson/Sites/dinnerplanner-html/app/partials/search.html",
+		"/Users/hjalmarjakobsson/Sites/dinnerplanner-html/app/partials/dinner-sidebar.html",
+		"/Users/hjalmarjakobsson/Sites/dinnerplanner-html/todo.txt",
+		"/Users/hjalmarjakobsson/Sites/dinnerplanner-html/app/js/searchCtrl.js",
+		"/Users/hjalmarjakobsson/Desktop/node-js-getting-started/package.json",
+		"/Users/hjalmarjakobsson/Sites/dinnerplanner-html/app/index.html",
+		"/Users/hjalmarjakobsson/Sites/mobweb/lab1/simple-map.html",
+		"/Users/hjalmarjakobsson/Sites/_frontend design/basic-websites/css-gooey-menu-version-1/index.html",
+		"/Users/hjalmarjakobsson/Library/Application Support/Sublime Text 3/Packages/Default/Preferences.sublime-settings",
+		"/Users/hjalmarjakobsson/Library/Application Support/Sublime Text 3/Packages/User/Preferences.sublime-settings",
+		"/Users/hjalmarjakobsson/Sites/dinnerplanner-html/app/js/test_navCtrl.js",
+		"/Users/hjalmarjakobsson/Sites/dinna/app/index.html",
+		"/Users/hjalmarjakobsson/Sites/angular-basic-reg-form/js/services/authentication.js",
+		"/Users/hjalmarjakobsson/Sites/_angular_sites/AngularJS 1; Adding Registration to Your Application/ch02/02_09/angularregistration/js/services/authentication.js",
+		"/Users/hjalmarjakobsson/Sites/_angular_sites/AngularJS 1; Adding Registration to Your Application/ch02/02_09/angularregistration/index.html",
+		"/Users/hjalmarjakobsson/Sites/_angular_sites/AngularJS 1; Adding Registration to Your Application/my_version/js/controllers/success.js",
+		"/Users/hjalmarjakobsson/Sites/_angular_sites/AngularJS 1; Adding Registration to Your Application/my_version/views/register.html",
+		"/Users/hjalmarjakobsson/Sites/_angular_sites/AngularJS 1; Adding Registration to Your Application/my_version/views/login.html",
+		"/Users/hjalmarjakobsson/Sites/_angular_sites/AngularJS 1; Adding Registration to Your Application/my_version/js/services/authentication.js",
+		"/Users/hjalmarjakobsson/Library/Application Support/Sublime Text 3/Packages/SublimeLinter-jshint/README.md",
+		"/Users/hjalmarjakobsson/Library/Application Support/Sublime Text 3/Packages/BracketHighlighter/readme.md",
+		"/Users/hjalmarjakobsson/Sites/_angular_sites/AngularJS 1; Adding Registration to Your Application/my_version/css/style.css",
+		"/Users/hjalmarjakobsson/Sites/_angular_sites/AngularJS 1; Adding Registration to Your Application/ch02/02_04/angularregistration/js/controllers/registration.js",
+		"/Users/hjalmarjakobsson/Sites/_angular_sites/AngularJS 1; Adding Registration to Your Application/ch02/02_05/angularregistration/js/controllers/registration.js",
+		"/Users/hjalmarjakobsson/Sites/_angular_sites/AngularJS 1; Adding Registration to Your Application/my_version/views/nav.html",
+		"/Users/hjalmarjakobsson/Sites/_angular_sites/AngularJS 1; Adding Registration to Your Application/my_version/views/success.html",
+		"/Users/hjalmarjakobsson/Sites/_angular_sites/AngularJS 1; Adding Registration to Your Application/ch01/01_05/angularregistration/js/controllers/success.js",
+		"/Users/hjalmarjakobsson/Sites/_angular_sites/AngularJS 1; Adding Registration to Your Application/my_version/js/app.js",
+		"/Users/hjalmarjakobsson/Sites/_angular_sites/AngularJS 1; Adding Registration to Your Application/my_version/gulpfile.js",
+		"/Users/hjalmarjakobsson/Sites/_angular_sites/AngularJS 1; Adding Registration to Your Application/my_version/package.json",
+		"/Users/hjalmarjakobsson/Sites/_angular_sites/AngularJS 1; Adding Registration to Your Application/ch01/01_05/angularregistration/views/login.html",
+		"/Users/hjalmarjakobsson/Sites/_angular_sites/AngularJS 1; Adding Registration to Your Application/my_version/js/controllers/registration.js",
+		"/Users/hjalmarjakobsson/Sites/_angular_sites/AngularJS 1; Adding Registration to Your Application/ch01/01_07/angularregistration/views/login.html",
+		"/Users/hjalmarjakobsson/Sites/_angular_sites/AngularJS 1; Adding Registration to Your Application/ch01/01_02/angularregistration/index.html",
+		"/Users/hjalmarjakobsson/Sites/_angular_sites/AngularJS 1; Adding Registration to Your Application/ch01/01_03/angularregistration/js/app.js",
+		"/Users/hjalmarjakobsson/Sites/_angular_sites/AngularJS 1; Adding Registration to Your Application/my_version/js/lib/angular/angular.min.js",
+		"/Users/hjalmarjakobsson/Sites/_angular_sites/AngularJS 1; Adding Registration to Your Application/my_version/js/lib/angular/angular-animate.min.js",
+		"/Users/hjalmarjakobsson/Sites/_angular_sites/AngularJS 1; Adding Registration to Your Application/my_version/js/lib/angular/angular-route.min.js",
+		"/Users/hjalmarjakobsson/Sites/_angular_sites/AngularJS 1; Adding Registration to Your Application/my_version/index.html",
+		"/Users/hjalmarjakobsson/Library/Application Support/Sublime Text 3/Packages/User/Default (OSX).sublime-keymap",
+		"/Users/hjalmarjakobsson/Library/Application Support/Sublime Text 3/Packages/Default/Default (OSX).sublime-keymap",
+		"/Users/hjalmarjakobsson/Sites/MAMPsites/lynda-php-w-mysql/mysandbox/validation.php",
+		"/Users/hjalmarjakobsson/Sites/MAMPsites/lynda-php-w-mysql/mysandbox/false_pos.php",
+		"/Users/hjalmarjakobsson/Sites/MAMPsites/lynda-php-w-mysql/mysandbox/included_functions.php",
+		"/Users/hjalmarjakobsson/Sites/MAMPsites/lynda-php-w-mysql/mysandbox/form_single.php",
+		"/Users/hjalmarjakobsson/Sites/MAMPsites/lynda-php-w-mysql/mysandbox/form.php",
+		"/Users/hjalmarjakobsson/Sites/MAMPsites/lynda-php-w-mysql/mysandbox/form_processing.php",
+		"/Users/hjalmarjakobsson/Sites/Pitch Maschine/omni/018-pm-fixed-new-interval-range.html",
+		"/Users/hjalmarjakobsson/Sites/MAMPsites/lynda-php-w-mysql/mysandbox/javasc.js",
+		"/Users/hjalmarjakobsson/Library/Application Support/Sublime Text 3/Packages/User/Emmet.sublime-settings",
+		"/Users/hjalmarjakobsson/Library/Application Support/Sublime Text 3/Packages/Emmet/Emmet.sublime-settings",
+		"/Users/hjalmarjakobsson/Library/Application Support/Sublime Text 3/Packages/Emmet/Default (OSX).sublime-keymap",
+		"/Users/hjalmarjakobsson/Sites/MAMPsites/lynda-php-w-mysql/mysandbox/encodingforhtml.php",
+		"/Users/hjalmarjakobsson/Library/Application Support/Sublime Text 3/Packages/Emmet/README.md",
+		"/Users/hjalmarjakobsson/Library/Application Support/Sublime Text 3/Packages/HyperlinkHelper/README.md",
+		"/Users/hjalmarjakobsson/Library/Application Support/Sublime Text 3/Packages/SideBarEnhancements/Side Bar.sublime-settings",
+		"/Users/hjalmarjakobsson/Library/Application Support/Sublime Text 3/Packages/User/Side Bar.sublime-settings",
+		"/Users/hjalmarjakobsson/Library/Application Support/Sublime Text 3/Packages/SideBarEnhancements/readme.md",
+		"/Users/hjalmarjakobsson/Library/Application Support/Sublime Text 3/Packages/ReadmePlease/README.md",
+		"/Users/hjalmarjakobsson/Sites/MAMPsites/lynda-php-w-mysql/mysandbox/htmlencode.php",
+		"/Users/hjalmarjakobsson/Library/Application Support/Sublime Text 3/Packages/LineEndings/readme.md",
+		"/Users/hjalmarjakobsson/Sites/MAMPsites/lynda-php-w-mysql/mysandbox/basic.html",
+		"/Users/hjalmarjakobsson/Library/Application Support/Sublime Text 3/Packages/C#/README.markdown",
+		"/Users/hjalmarjakobsson/Library/Application Support/Sublime Text 3/Packages/Package Control/readme.md",
+		"/Users/hjalmarjakobsson/Sites/MAMPsites/lynda-php-w-mysql/mysandbox/form_processing.html",
+		"/Users/hjalmarjakobsson/Sites/MAMPsites/lynda-php-w-mysql/mysandbox/my_phpinfo.php",
+		"/Users/hjalmarjakobsson/Sites/MAMPsites/lynda-php-w-mysql/mysandbox/redirect.php",
+		"/Users/hjalmarjakobsson/Sites/MAMPsites/lynda-php-w-mysql/mysandbox/phpheaders.php",
+		"/Users/hjalmarjakobsson/Sites/MAMPsites/lynda-php-w-mysql/mysandbox/included_header.php",
+		"/Users/hjalmarjakobsson/Sites/MAMPsites/lynda-php-w-mysql/mysandbox/include.php"
+	],
+	"find":
+	{
+		"height": 25.0
+	},
+	"find_in_files":
+	{
+		"height": 93.0,
+		"where_history":
+		[
+			"/Users/hjalmarjakobsson/Sites/EthanRBrown-web-development-with-node-and-express/ch11",
+			"/Users/hjalmarjakobsson/Sites/Bootstrap Training/Images"
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"/tour/:",
+			"mogno",
+			"}\n",
+			"email.sendError(",
+			"email.sendError('the widget broke down!'",
+			"cluster",
+			"clus",
+			"http",
+			"cart",
+			"app.get('/', function(req, res) {\n	res.render('home');\n});\napp.get('/about', function(req,res){\n	res.render('about', { \n		fortune: fortune.getFortune(),\n		pageTestScript: '/qa/tests-about.js' \n	} );\n});\napp.get('/tours/request-group-rate', function(req, res){\n	res.render('tours/request-group-rate');\n});\napp.get('/jquery-test', function(req, res){\n	res.render('jquery-test');\n});\napp.get('/nursery-rhyme', function(req, res){\n	res.render('nursery-rhyme');\n});\napp.get('/data/nursery-rhyme', function(req, res){\n	res.json({\n		animal: 'squirrel',\n		bodyPart: 'tail',\n		adjective: 'bushy',\n		noun: 'heck',\n	});\n});\napp.get('/thank-you', function(req, res){\n	res.render('thank-you');\n});\napp.get('/newsletter', function(req, res){\n	res.render('newsletter');\n});\n",
+			"tour",
+			"/adventures",
+			"tr",
+			"gma",
+			"gmail ",
+			"gmail",
+			"basicAuth ",
+			"basicAuth",
+			"advent",
+			"cart",
+			"session.",
+			"boots",
+			"star-rating",
+			"<strong>",
+			"tempList",
+			"idStrings",
+			"max",
+			");\n",
+			"mIDs",
+			"menuDishIDs",
+			"DishList",
+			"dishList",
+			"DishList",
+			"Dinner.",
+			"$cookies",
+			"i",
+			"F088t4s6QGI5T92W3Nwiju8jFU52J8SP",
+			"0OV23011kU7B3VVVgxTTTIfdNXeTI3us",
+			"F088t4s6QGI5T92W3Nwiju8jFU52J8SP",
+			"66J8l00npnHHZcCNLRhxkfW1OHxbojy4",
+			"0OV23011kU7B3VVVgxTTTIfdNXeTI3us",
+			"F088t4s6QGI5T92W3Nwiju8jFU52J8SP",
+			"href",
+			"/:1",
+			"class",
+			"/:1",
+			"/1",
+			"query",
+			"marker",
+			"myLatLng",
+			"397",
+			"myObj",
+			"currentUser.firstname",
+			"ng",
+			"nav",
+			"regRef",
+			"btn",
+			"nav",
+			"cf",
+			"btn",
+			"cf",
+			"email",
+			"message",
+			"section",
+			"is_equal",
+			"password",
+			"username",
+			"int",
+			"append",
+			"snipp",
+			"shift-ctrl-s",
+			"ctrl-shift-s",
+			"comment",
+			"a",
+			"f12",
+			"username",
+			"company",
+			"id",
+			"iList",
+			"/*",
+			";\n",
+			"vertical",
+			"getNextNoteIndex",
+			"noteList",
+			"amp",
+			"a_v",
+			"check",
+			"start",
+			"each",
+			"checkers",
+			"activeVoices",
+			"checker",
+			"voice5",
+			"voice",
+			"checker",
+			"gain",
+			"changePitchToNext",
+			"vobj",
+			"getNextNoteIndex",
+			"vObj",
+			"getNextNoteIndex",
+			"calculateKeycode",
+			"getNextNoteIndex",
+			"changetone",
+			"chagne",
+			"changeton",
+			"getnextnote",
+			"FF4C5A",
+			"variableObject",
+			"muteButton",
+			"		    $('.",
+			"mute",
+			"totAve",
+			"totave",
+			"totAve",
+			"totave",
+			"totAve",
+			"totalAverageBMP",
+			"totalAverageBPM",
+			"TotalAverageBPM",
+			"totalAverageBPM",
+			"com",
+			"totave",
+			"totAve",
+			"totave",
+			"totAve",
+			"HighestReachedBPM",
+			"AverageBMP"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"sheets":
+			[
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 25.0
+	},
+	"input":
+	{
+		"height": 34.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.exec":
+	{
+		"height": 100.0
+	},
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"pinned_build_system": "",
+	"project": "iprog-projekt-vt16.sublime-project",
+	"replace":
+	{
+		"height": 46.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"adventu",
+				"ch10/views/adventure.handlebars"
+			],
+			[
+				"inde",
+				"index.html"
+			],
+			[
+				"multi-",
+				"pseudo-code/multi-pseudo.js"
+			],
+			[
+				"ind",
+				"index.html"
+			],
+			[
+				"in",
+				"index.html"
+			],
+			[
+				"index",
+				"index.html"
+			],
+			[
+				"app",
+				"js/app.js"
+			],
+			[
+				"css",
+				"_css/main.css"
+			]
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 500.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"",
+				"~/Sites/EthanRBrown-web-development-with-node-and-express/ch13/iprog-projekt-vt16.sublime-project"
+			],
+			[
+				"pitch",
+				"~/Sites/Pitch Maschine/pitch-maschine.sublime-project"
+			],
+			[
+				"ip",
+				"~/Sites/dinnerplanner-html/iprog-lab-5.sublime-project"
+			],
+			[
+				"ipr",
+				"~/Sites/angular-basic-reg-form/iprog-LAB5.sublime-workspace"
+			],
+			[
+				"ipro",
+				"~/Sites/angular-basic-reg-form/iprog-LAB5.sublime-workspace"
+			],
+			[
+				"dinn",
+				"~/Sites/dinnerplanner-lab5/dinner-planner-lab5.sublime-workspace"
+			],
+			[
+				"php",
+				"~/Sites/MAMPsites/lynda-php-w-mysql/php-w-mysql.sublime-project"
+			],
+			[
+				"in",
+				"~/Sites/Interaktiva-Lab-2/dinnerplanner.sublime-project"
+			],
+			[
+				"din",
+				"~/Sites/Interaktiva-Lab-2/dinnerplanner.sublime-project"
+			],
+			[
+				"pi",
+				"~/Desktop/pitch-maschine.sublime-workspace"
+			]
+		],
+		"width": 380.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 243.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}
