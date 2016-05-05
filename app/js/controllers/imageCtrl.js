@@ -1,4 +1,4 @@
-myApp.controller('imageCtrl', function($scope, $http, $q, $cookies, albumGramService) {
+myApp.controller('imageCtrl', function($scope, $window, $http, $q, $cookies, albumGramService) {
 	
 	var vm = this;
 	$scope.card = {};
@@ -34,8 +34,12 @@ myApp.controller('imageCtrl', function($scope, $http, $q, $cookies, albumGramSer
 	} 
 	else {
 		albumGramService.favoriteList = albumGramService.cookieGet();
-		};
-		
+	};
+	
+	$scope.scroll = function(){
+		$window.scrollTo(0, 0);
+	}
+	
 	$scope.favorites = albumGramService.favoriteList;
 	
 	$scope.addToFavorite = function (id) {

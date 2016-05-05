@@ -21,10 +21,14 @@
 							<md-button class="md-icon-button md-accent" aria-label="Favorite" ng-click="addToFavorite(shot)">
 								<md-icon md-svg-icon="img/icons/favorite.svg"></md-icon>
 							</md-button>
+							
 					  </div>
 					</div>
 					<md-button ng-hide="vm.loadingMore" class="md-raised" style="margin-left:50%; margin-right: 50%;" ng-click="vm.loadingMore=true && vm.loadMoreShots()">	
 						Load more
+					</md-button>
+					<md-button class="md-raised" style="margin-left:50%; margin-right: 50%;" ng-click="scroll()">	
+						Scroll to top
 					</md-button>
 					<div class="loading-more-indicator" ng-show="vm.loadingMore">
 						<md-progress-circular md-mode="indeterminate" md-diameter="64" class="progress-swatch"></md-progress-circular>
@@ -67,6 +71,9 @@
 						</div>
 						<md-button class="md-raised" style="margin-left:45%;" ng-click="vn.loadingMore=true && vn.loadMoreShots()">	
 							Load more
+						</md-button>
+						<md-button class="md-raised" style="margin-left:50%; margin-right: 50%;" ng-click="scroll()">	
+							Scroll to top
 						</md-button>
 						<div class="loading-more-indicator" ng-show="vn.loadingMore">
 						  <md-progress-circular md-mode="indeterminate" md-diameter="64" class="progress-swatch"></md-progress-circular>
