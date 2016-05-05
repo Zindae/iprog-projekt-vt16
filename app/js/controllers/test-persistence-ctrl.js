@@ -61,3 +61,13 @@ myApp.controller('persistenceCtrl', ['$scope','$rootScope', 'Authentication', fu
 		return;
 	};
 }]);
+
+
+// // calling $save() on the synchronized object syncs all data back to our database
+//     $scope.saveProfile = function() {
+//       $scope.profile.$save().then(function() {
+//         alert('Profile saved!');
+//       }).catch(function(error) {
+//         alert('Error!');
+//       });
+//     };

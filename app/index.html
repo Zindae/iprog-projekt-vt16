@@ -57,10 +57,15 @@
 <body>
 <header>
 
-  <div ng-include="'views/nav.html'" ng-controller="RegistrationController">
+  <nav ng-include="'views/nav.html'" ng-controller="RegistrationController">
+
   </nav>
 </header>
+
+
 <br/>
+
+
   <div class="page">
       <div class="userinfo" ng-show="currentUser" ng-controller="RegistrationController">
         <span class="userinfo">
@@ -82,8 +87,9 @@
 
       <div class="comments-area" ng-controller="persistenceCtrl">
         <div class="input">
+          <p>If i am logged in my name will appear below:</p>
           <ul>
-            <li >If i am logged in my name will appear here: {{ ud() }}</li>
+            <li ng-repeat="x in ud()">{{x}}</li>
           </ul>
 
           <!-- <input name="input-comment" type="text" class="form-control" placeholder="enter comment" ng-model="enteredComment">
@@ -98,14 +104,11 @@
         <div class="output">
           <button class="btn" ng-click="logRoot()">logRoot</button>
         </div>
-    </div>
+    </div> <!-- class=comments-area ends here -->
 
 
+  </div> <!-- class=page ends here -->
 
-
-
-
-  </div>
 </body>
 </html>
 

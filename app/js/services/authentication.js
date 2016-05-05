@@ -44,6 +44,15 @@ myApp.factory('Authentication', ['$rootScope', '$firebaseAuth', '$firebaseObject
 	
     });
 	
+
+  // calling $save() on the synchronized object syncs all data back to our database
+  this.saveUser = function() {
+      $rootScope.currentUser.$save().then(function() {
+        alert('data saved!');
+      }).catch(function(error) {
+        alert('Error!');
+      });
+    };
 	
 	this.getCurr = function() {
 		$rootScope.currentUser.$value = { 'a': 1, 'b': 2, 'c': 3 }; 
@@ -52,11 +61,13 @@ myApp.factory('Authentication', ['$rootScope', '$firebaseAuth', '$firebaseObject
 	
 	this.updateCurr = function(test) {
 		$rootScope.currentUser.$value[test.header] = test.comment;
-		console.log($rootScope.currentUser.$value);
-		$rootScope.currentUser.$save();
-		console.log($rootScope.currentUser.$save());
+    $rootScope.currentUser[test.header] = test.comment;
+		// console.log($rootScope.currentUser.$value);
+		// $rootScope.currentUser.$save();
+    this.saveUser();
+		// console.log($rootScope.currentUser.$save());
 		return $rootScope.currentUser.$value;
-	}
+	};
 	
      // created when Authentication is called in the Controllers
       this.login = function(user) {

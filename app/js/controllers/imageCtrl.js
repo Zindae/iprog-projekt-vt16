@@ -14,7 +14,7 @@ myApp.controller('imageCtrl', function($scope, $http, $q) {
 		// https://api.flickr.com/services/rest/?method=flickr.photos.getRecent&api_key=38c248a92d1a579098352a361c8871e2&page=1&format=json&nojsoncallback=1&api_sig=adc90df373dc1db30e8ffcea9fd8ae52
 		vm.loadingMore = true;
 		// var promise = $http.get('https://api.dribbble.com/v1/shots/?per_page=24&page='+vm.page+'&access_token=3df6bcfc60b54b131ac04f132af615e60b0bd0b1cadca89a4761cd5d125d608f');
-		var promise = $http.get('https://api.flickr.com/services/rest/?method=flickr.photos.getRecent&api_key=9983c31b37bc28c9bbcb0599b955d326&per_page=24&page='+vm.page+'&format=json&nojsoncallback=1');
+		var promise = $http.get('https://api.flickr.com/services/rest/?method=flickr.photos.getRecent&api_key=f40d1f56dec225b17d62a0d251bb89b7&per_page=24&page='+vm.page+'&format=json&nojsoncallback=1');
 		promise.then(function(data) {
 			console.log(promise);
 			var shotsTmp = angular.copy(vm.shots);		
