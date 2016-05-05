@@ -27,7 +27,7 @@
 					<md-button ng-hide="vm.loadingMore" class="md-raised" style="margin-left:50%; margin-right: 50%;" ng-click="vm.loadingMore=true && vm.loadMoreShots()">	
 						Load more
 					</md-button>
-					<md-button class="md-raised" style="margin-left:50%; margin-right: 50%;" ng-click="scroll()">	
+					<md-button class="md-raised" style="position: fixed; bottom: 35px; right: 40px;" ng-click="scroll()">	
 						Scroll to top
 					</md-button>
 					<div class="loading-more-indicator" ng-show="vm.loadingMore">
@@ -72,7 +72,7 @@
 						<md-button class="md-raised" style="margin-left:45%;" ng-click="vn.loadingMore=true && vn.loadMoreShots()">	
 							Load more
 						</md-button>
-						<md-button class="md-raised" style="margin-left:50%; margin-right: 50%;" ng-click="scroll()">	
+						<md-button class="md-raised" style="position: fixed; bottom: 35px; right: 40px;" ng-click="scroll()">	
 							Scroll to top
 						</md-button>
 						<div class="loading-more-indicator" ng-show="vn.loadingMore">
