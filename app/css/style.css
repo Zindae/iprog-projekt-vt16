@@ -70,7 +70,6 @@ md-dialog.md-transition-out {
 .navigation {
 	font-size: 0;
 	text-align: center;
-  background-color: Gainsboro ;
 }
  
 .navigation a {
@@ -133,7 +132,7 @@ md-dialog.md-transition-out {
 	position: absolute;
 	text-align: left;
 	transition: opacity linear 0.2s;
-	width: 280px;
+	width: 105px;
 	z-index: -1;
 	color: white;
 }
@@ -182,7 +181,12 @@ html {
 }
 
 #content-scroller{
-  background-color: white; /* 
+  overflow: visible;
+    background: pink; /* For browsers that do not support gradients */    
+    background: -webkit-linear-gradient(30deg, pink , mistyrose); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(30deg, pink, mistyrose); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(30deg, pink, mistyrose); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(30deg, pink , mistyrose); /* Standard syntax (must be last) *
 }
 
 md-toolbar button.md-button.md-icon-button:first-child {
