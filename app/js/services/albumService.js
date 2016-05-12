@@ -19,12 +19,12 @@ myApp.factory('albumGramService', ['$resource', '$http', '$q', '$cookies', funct
 	}	
 	
 	this.getRecentPhotos = function (vmpage) {
-		var promise = $http.get('https://api.flickr.com/services/rest/?method=flickr.photos.getRecent&api_key=f40d1f56dec225b17d62a0d251bb89b7&per_page=24&page='+vmpage+'&format=json&nojsoncallback=1');
+		var promise = $http.get('https://api.flickr.com/services/rest/?method=flickr.photos.getRecent&api_key=187fb0257e49115304936fc74ce6538a&per_page=24&page='+vmpage+'&format=json&nojsoncallback=1');
 		return promise;
 	}
 	
 	this.search = function (text, vnpage) {
-		var promise = $http.get('https://api.flickr.com/services/rest/?method=flickr.photos.search&api_key=f40d1f56dec225b17d62a0d251bb89b7&text='+text+'&per_page=24&page='+vnpage+'&format=json&nojsoncallback=1');
+		var promise = $http.get('https://api.flickr.com/services/rest/?method=flickr.photos.search&api_key=187fb0257e49115304936fc74ce6538a&text='+text+'&per_page=24&page='+vnpage+'&format=json&nojsoncallback=1');
 		return promise;
 	}
 	
