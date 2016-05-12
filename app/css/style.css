@@ -59,7 +59,7 @@ md-dialog.md-transition-out {
 .md-dummy-wrapper {
 	/* display: none; */
 }
-
+ 
 .nav-bar {
 	background: #C8DEFF;
 	border-bottom: 3px solid #666;
@@ -70,6 +70,15 @@ md-dialog.md-transition-out {
 .navigation {
 	font-size: 0;
 	text-align: center;
+<<<<<<< Updated upstream
+=======
+<<<<<<< HEAD
+  background:url("http://wallpaperlayer.com/img/2015/6/tumblr-flower-backgrounds-6463-6740-hd-wallpapers.jpg");
+  height: 100px;
+
+=======
+>>>>>>> origin/master
+>>>>>>> Stashed changes
 }
  
 .navigation a {
